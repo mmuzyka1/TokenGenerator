@@ -50,11 +50,11 @@ public class Main {
         return IntStream.rangeClosed(48, 57).boxed().collect(Collectors.toList());
     }
 
-    private static List<Integer> getLowerCaseList() {
+    private static List<Integer> getLowercaseList() {
         return IntStream.rangeClosed(97, 122).boxed().collect(Collectors.toList());
     }
 
-    private static List<Integer> getUpperCaseList() {
+    private static List<Integer> getUppercaseList() {
         return IntStream.rangeClosed(65, 90).boxed().collect(Collectors.toList());
     }
 
@@ -64,8 +64,8 @@ public class Main {
 
     private static void populateAvailableCharactersList() {
         availableCharacters.addAll(getNumbersList());
-        availableCharacters.addAll(getLowerCaseList());
-        availableCharacters.addAll(getUpperCaseList());
+        availableCharacters.addAll(getLowercaseList());
+        availableCharacters.addAll(getUppercaseList());
         availableCharacters.addAll(getSpecialCharactersList());
     }
 }
