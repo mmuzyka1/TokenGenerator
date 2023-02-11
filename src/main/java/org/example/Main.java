@@ -9,9 +9,9 @@ import java.util.stream.IntStream;
 
 public class Main {
 
-    static List<Integer> availableTokenLengths = List.of(5, 10, 15);
-    static List<Integer> availableCharacters = new ArrayList<>();
-    
+    private static final List<Integer> availableTokenLengths = List.of(5, 10, 15);
+    private static final List<Integer> availableCharacters = new ArrayList<>();
+
     public static void main(String[] args) {
         populateAvailableCharactersList();
         System.out.println(tokenGenerator(getTokenLength()));
